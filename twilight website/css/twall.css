@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	color: black;
+	font-family: "times new roman";
+	text-decoration: bold;
+}
+.navbar ul li::after
+{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #05A282;
+	position:absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.3s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
